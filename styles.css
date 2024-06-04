@@ -1,0 +1,144 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'abelregular';
+    src: url('fonts/abel-fontfacekit/web fonts/abel_regular_macroman/abel-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto_slabregular';
+    src: url('fonts/roboto-slab-fontfacekit/web fonts/robotoslab_regular_macroman/RobotoSlab-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root{
+    --grey-background: #f4f0f4;
+    --radius: 6px;
+}
+
+body{
+    display: flex;
+    font-family: 'roboto_slabregular','abelregular',sans-serif;
+}
+
+h3{
+    font-size: 20px;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.left-panel,
+.right-panel{
+    height: 100vh;
+    flex-basis: 10%;
+}
+
+
+
+.left-panel{
+    flex-grow: 1;
+    background-image: url(img/cagatay-orhan-PYh4QCX_fmE-unsplash.jpg);
+    background-size: cover;
+}
+
+.right-panel{
+    /* 3 times the size of left panel which has grow 1 */
+    flex-grow: 3;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.right-top-section,
+.right-middle-section,
+.right-bottom-section{
+    flex-grow: 1;
+    flex-basis: 33%;
+    padding: 40px;
+}
+
+.right-top-section,
+.right-bottom-section{
+    background-color: var(--grey-background);
+}
+
+.right-top-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+
+
+}
+
+.inputs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:70%
+}
+
+.inp-element{
+    display: flex;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    width:40%;
+    gap:2px;
+    flex-direction: column;
+}
+
+input{
+    background-color: #fffefe;
+    border: solid 1px gray;
+    border-radius: var(--radius);
+    padding: 5px;
+}
+
+input:focus{
+    border: solid 1px blue;
+}
+
+.right-middle-section{
+    padding: 30px;
+}
+
+#match-invalid{
+    font-size: 12px;
+}
+
+.right-bottom-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* padding: 30px; */
+    gap:20px;
+
+    /* box-shadow: 0px -10px 30px gray inset; */
+
+    button{
+        width: 20%;
+        padding: 20px;
+        color: #fffefe;
+        background-color: #7875a3;
+        border: solid 1px #7875a3;
+        border-radius: var(--radius);
+        flex-shrink: 0;
+    }
+
+    button:hover{
+        background-color: #9694b8;
+        border: solid 1px #9694b8; 
+        
+    }
+}

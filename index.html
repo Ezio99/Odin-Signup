@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="StyleSheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>SignUp</title>
+</head>
+
+<body>
+    <div class="left-panel"></div>
+    <div class="right-panel">
+        <div class="right-top-section">
+            <h3>
+                This is not a real online service! You know you need something like this in your life to help you
+                realize your deepest dreams.
+                <br>Sign up <span class="italic">now</span> to get started
+            </h3>
+            <h3>
+                You <span class="italic">know</span> you want to.
+            </h3>
+        </div>
+        <div class="right-middle-section">
+            <h3>Let's do this!</h3>
+            <form>
+
+                <div class="inputs">
+                    <div class="inp-element">
+                        <label for="fname">First name</label>
+                        <input type="text" name="fname" id="fname" required />
+                    </div>
+
+                    <div class="inp-element">
+                        <label for="lname">Last name</label>
+                        <input type="text" name="lname" id="lname" required />
+                    </div>
+
+                    <div class="inp-element">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required />
+                    </div>
+
+                    <div class="inp-element">
+                        <label for="phone">Phone number</label>
+                        <input type="number" name="phone" id="phone" required />
+                    </div>
+
+                    <div class="inp-element">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required />
+                        <span id="match-invalid"></span>
+                    </div>
+
+                    <div class="inp-element">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" name="confirmPassword" id="confirmPassword" required />
+                    </div>
+                </div>
+
+        </div>
+        <div class="right-bottom-section">
+            <button type="submit">Create account</button>
+            <h3>
+                Already have an account? <a href="#">Log in</a>
+            </h3>
+        </div>
+        </form>
+    </div>
+</body>
+
+</html>
